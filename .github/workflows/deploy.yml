@@ -98,5 +98,5 @@ jobs:
           region: westeurope
           template: ./infra/web-app/web-app.bicep
           resourceGroupName: ${{ vars.AZ_RESOURCE_GROUP }}
-          parameters: "location=westeurope appName=${{ vars.AZ_APP_NAME }} containerImage=${{ needs.package-and-publish.outputs.container }} actor=${{ github.actor }} repo=${{ github.repository }}"
+          parameters: "location=westeurope appName=${{ vars.AZ_APP_NAME }} containerImage=${{ needs.package-and-publish.outputs.container }} actor=${{ github.actor }} repository=${{ github.repository }}"
 
